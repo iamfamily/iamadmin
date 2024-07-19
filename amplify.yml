@@ -20,3 +20,5 @@ frontend:
     paths:
       - .npm/**/*
       - node_modules/**/*
+  runtime: 
+    image: node:18.19
