@@ -10,10 +10,6 @@ export const auth = defineAuth({
   },
 
   userAttributes: {
-    // specify a "birthdate" attribute
-    birthdate: {
-      mutable: true,
-      required: false,
-    }
+
   },
 });
