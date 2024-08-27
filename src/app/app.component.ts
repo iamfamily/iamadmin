@@ -16,7 +16,20 @@ Amplify.configure(outputs);
 })
 export class AppComponent {
   title = 'amplify-angular-template';
+
   constructor(public authenticator: AuthenticatorService) {
     Amplify.configure(outputs);
+  }
+
+  ngOnInit() {
+    console.log('AppComponent initialized');
+//     console.log('User object:', this.user);
+    console.log('AppComponent init test');
+  }
+
+  logMessage(user: any) {
+    console.log('Button was clicked!');
+    console.log('User object:', user);
+    console.log('2 Button was clicked!');
   }
 }

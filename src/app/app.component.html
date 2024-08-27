@@ -4,7 +4,8 @@
     let-user="user"
     let-signOut="signOut"
   >
-  <h1>Hello {{user?.signInDetails?.loginId}}'s todos</h1>
+    <h1>Hello {{user?.signInDetails?.loginId}}'s todos</h1>
+    <button (click)="logMessage(user)">Log Message</button>
     <app-todos></app-todos>
     <button (click)="signOut()">Sign Out</button>
   </ng-template>
